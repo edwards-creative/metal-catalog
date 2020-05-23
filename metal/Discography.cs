@@ -39,9 +39,9 @@ namespace metal
                     type = table.SelectSingleNode($"//tr[{count}]/td[2]").InnerText;
 
                     albumUrl = $"{Band.baseUrl}/albums/{Band.name.Replace(" ", "_")}/{title.Replace(" ", "_")}/";
-                    Console.WriteLine(albumUrl);
+                    //Console.WriteLine(albumUrl);
 
-                    Console.WriteLine("{0}: {1} ({2})\n", year, title, type);
+                    Console.WriteLine("{0}: {1} ({2})", year, title, type);
                     count++;
                 }
             }
