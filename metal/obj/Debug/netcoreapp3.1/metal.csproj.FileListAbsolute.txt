@@ -2,7 +2,6 @@
 /Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.AssemblyInfoInputs.cache
 /Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.AssemblyInfo.cs
 /Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.csprojAssemblyReference.cache
-/Users/jon/Projects/metal/metal/bin/Debug/netcoreapp3.1/metal-catalog-51f91287eeea.json
 /Users/jon/Projects/metal/metal/bin/Debug/netcoreapp3.1/metal.deps.json
 /Users/jon/Projects/metal/metal/bin/Debug/netcoreapp3.1/metal.runtimeconfig.json
 /Users/jon/Projects/metal/metal/bin/Debug/netcoreapp3.1/metal.runtimeconfig.dev.json
