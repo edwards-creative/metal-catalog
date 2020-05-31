@@ -3,6 +3,10 @@ namespace metal
 {
     public class RunSearch
     {
+        public static int albumSelect = 0;
+
+        // foreach (var album in Album.AlbumList())
+
         public static void Search()
         {
             while (true)
@@ -18,12 +22,17 @@ namespace metal
                     Band.DisplayBandInfo();
 
                     Console.WriteLine("Would you like to see their discography? (Y/N)");
-                    string getAlbumList = Console.ReadLine();
+                    string getDiscography = Console.ReadLine();
 
-                    if (getAlbumList.Equals("Y", StringComparison.InvariantCultureIgnoreCase))
+                    if (getDiscography.Equals("Y", StringComparison.InvariantCultureIgnoreCase))
                     {
                         Discography.GetDiscography();
                         Discography.DisplayDiscography();
+
+                        Console.WriteLine($"\nSelect an album (1-{Discography.albumCount}, or continue searching.Y/N)");
+                        Album.AlbumList();
+                        Album.GetAlbum();
+                        // string viewAlbum = Console.ReadLine();
                     }
                 }
                 catch (System.NullReferenceException)

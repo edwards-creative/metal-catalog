@@ -10,7 +10,8 @@ namespace metal
 
         public static void Main(string[] args)
         {
-            RunSearch.Search();    
+            RunSearch.Search();
+
         }
     }
 }
