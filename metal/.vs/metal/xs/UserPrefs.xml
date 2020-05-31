@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{A4B0955C-FA80-41CC-8EDE-BE08FEC6D599}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Discography.cs">
+    <Files>
+      <File FileName="Program.cs" Line="14" Column="59" />
+      <File FileName="RunSearch.cs" Line="16" Column="18" />
+      <File FileName="Band.cs" Line="1" Column="1" />
+      <File FileName="Discography.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="metal" expanded="True">
+            <Node name="metal" expanded="True">
+              <Node name="Discography.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.metal PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

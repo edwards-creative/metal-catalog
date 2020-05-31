@@ -8,10 +8,61 @@
     ".NETCoreApp,Version=v3.1": {
       "metal/1.0.0": {
         "dependencies": {
+          "Google.Apis.Sheets.v4": "1.45.0.1965",
           "HtmlAgilityPack": "1.11.23"
         },
         "runtime": {
           "metal.dll": {}
+        }
+      },
+      "Google.Apis/1.45.0": {
+        "dependencies": {
+          "Google.Apis.Core": "1.45.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {
+            "assemblyVersion": "1.45.0.0",
+            "fileVersion": "1.45.0.0"
+          }
+        }
+      },
+      "Google.Apis.Auth/1.45.0": {
+        "dependencies": {
+          "Google.Apis": "1.45.0",
+          "Google.Apis.Core": "1.45.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {
+            "assemblyVersion": "1.45.0.0",
+            "fileVersion": "1.45.0.0"
+          },
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.45.0.0",
+            "fileVersion": "1.45.0.0"
+          }
+        }
+      },
+      "Google.Apis.Core/1.45.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "assemblyVersion": "1.45.0.0",
+            "fileVersion": "1.45.0.0"
+          }
+        }
+      },
+      "Google.Apis.Sheets.v4/1.45.0.1965": {
+        "dependencies": {
+          "Google.Apis": "1.45.0",
+          "Google.Apis.Auth": "1.45.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Sheets.v4.dll": {
+            "assemblyVersion": "1.45.0.1965",
+            "fileVersion": "1.45.0.1965"
+          }
         }
       },
       "HtmlAgilityPack/1.11.23": {
@@ -30,6 +81,14 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -514,6 +573,34 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Google.Apis/1.45.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V/huVWohIr8c2Zg9+W+8fBElPd8Smz03k8e+tq/X9JsRdvAPaCBNwvMVNoyPbH+x/2tEFyX+n1jvIGFNC4hLzw==",
+      "path": "google.apis/1.45.0",
+      "hashPath": "google.apis.1.45.0.nupkg.sha512"
+    },
+    "Google.Apis.Auth/1.45.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dPAhjWofPoGzNjjgmz1zUfnzOsj2lKr/cUgC03NETYIbSZoyLeC9Sc+OCZH9wL0DdklLnvopoFx/v7aTqVjamw==",
+      "path": "google.apis.auth/1.45.0",
+      "hashPath": "google.apis.auth.1.45.0.nupkg.sha512"
+    },
+    "Google.Apis.Core/1.45.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hYqI4v3kEIfWxiYierMo59XCAOFBoH30RqCzomSubK9JXGAv/o0Cp+gxEeAH9GspxQcZNZV50ouu/8Ypigd7fw==",
+      "path": "google.apis.core/1.45.0",
+      "hashPath": "google.apis.core.1.45.0.nupkg.sha512"
+    },
+    "Google.Apis.Sheets.v4/1.45.0.1965": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bf+Nd3OKAVUZF62sWzwu4l/wub9yksicJiHATjRiXLDQM2pQI3a99g3UcetXYfyrzprCzSCgk7g5Z0VtLmfQsg==",
+      "path": "google.apis.sheets.v4/1.45.0.1965",
+      "hashPath": "google.apis.sheets.v4.1.45.0.1965.nupkg.sha512"
+    },
     "HtmlAgilityPack/1.11.23": {
       "type": "package",
       "serviceable": true,
@@ -534,6 +621,13 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
