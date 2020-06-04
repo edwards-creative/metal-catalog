@@ -5,7 +5,6 @@ namespace metal
     {
         public static int albumSelect = 0;
 
-        // foreach (var album in Album.AlbumList())
 
         public static void Search()
         {
@@ -29,10 +28,11 @@ namespace metal
                         Discography.GetDiscography();
                         Discography.DisplayDiscography();
 
-                        Console.WriteLine($"\nSelect an album (1-{Discography.albumCount}, or continue searching.Y/N)");
-                        Album.AlbumList();
-                        Album.GetAlbum();
-                        // string viewAlbum = Console.ReadLine();
+                        // Album.AlbumList();
+                        // Album.GetAlbum();
+                        // Album.DisplayTrackList();
+
+                        continue;
                     }
                 }
                 catch (System.NullReferenceException)

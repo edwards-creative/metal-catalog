@@ -4,18 +4,18 @@ using HtmlAgilityPack;
 
 namespace metal
 {
-    public static class Discography
+    public class Discography
     {
         public static HtmlNode table;
         public static HtmlNode td;
 
+        public static List<string> albumList;
+        public static string albumUrl;
         public static string title;
         public static string year;
         public static string type;
         public static string discographyUrl;
-        public static string albumUrl;
-        public static List<string> albumList;
-        public static string extractAlbumUrl;
+
         public static int count = 1;
         public static int albumCount;
 
@@ -40,7 +40,7 @@ namespace metal
                     type = table.SelectSingleNode($"//tr[{count}]/td[2]").InnerText;
                     albumUrl = $"{Band.baseUrl}/albums/{Band.name.Replace(" ", "_")}/{title.Replace(" ", "_")}/";
                     albumList.Add(albumUrl);
-
+                    
                     Console.WriteLine("{0}. {1} ({2}, {3})", count, title, type, year);
                     count++;
                 }
@@ -50,12 +50,8 @@ namespace metal
             {
                 albumCount = albumList.Count;
                 Console.WriteLine("\nNo more albums to list, {0} albums total.", albumCount);
+                count = 1;
             }
-            /* foreach (var album in albumList)
-            {
-                Console.WriteLine(album);
-            }*/
-            
         }
     }
 }
