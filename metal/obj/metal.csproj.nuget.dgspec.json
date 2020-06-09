@@ -41,7 +41,7 @@
           "dependencies": {
             "Google.Apis.Sheets.v4": {
               "target": "Package",
-              "version": "[1.45.0.1965, )"
+              "version": "[1.46.0.1974, )"
             },
             "HtmlAgilityPack": {
               "target": "Package",

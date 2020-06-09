@@ -18,4 +18,3 @@
 /Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.dll
 /Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.pdb
 /Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.genruntimeconfig.cache
-/Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.csprojAssemblyReference.cache
