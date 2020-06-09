@@ -21,6 +21,7 @@ namespace metal
             name = Console.ReadLine();
 
             return name;
+            
         }
 
         public static void GetBandInfo()
@@ -28,14 +29,15 @@ namespace metal
             baseUrl = "https://www.metal-archives.com";
             searchQuery = $"{baseUrl}/bands/{name.Replace(" ", "_")}";
 
-            HtmlDocument document = Program.web.Load($"{searchQuery}");
+            HtmlDocument bandLoadPage = Program.web.Load($"{searchQuery}");
 
-            name = document.DocumentNode.SelectSingleNode("//*[@id='band_info']/h1").InnerText;
-            genre = document.DocumentNode.SelectSingleNode("//*[@id='band_stats']/dl[2]/dd[1]").InnerText;
-            location = document.DocumentNode.SelectSingleNode("//*[@id='band_stats']/dl[1]/dd[2]").InnerText;
-            theme = document.DocumentNode.SelectSingleNode("//*[@id='band_stats']/dl[2]/dd[2]").InnerText;
+            name = bandLoadPage.DocumentNode.SelectSingleNode("//*[@id='band_info']/h1").InnerText;
+            genre = bandLoadPage.DocumentNode.SelectSingleNode("//*[@id='band_stats']/dl[2]/dd[1]").InnerText;
+            location = bandLoadPage.DocumentNode.SelectSingleNode("//*[@id='band_stats']/dl[1]/dd[2]").InnerText;
+            theme = bandLoadPage.DocumentNode.SelectSingleNode("//*[@id='band_stats']/dl[2]/dd[2]").InnerText;
+
             // Required to get discography:
-            bandNumber = document.DocumentNode.SelectSingleNode("//*[@id='band_info']/h1").InnerHtml;
+            bandNumber = bandLoadPage.DocumentNode.SelectSingleNode("//*[@id='band_info']/h1").InnerHtml;
             id = Regex.Match(bandNumber, @"\d+").Value;
         }
 

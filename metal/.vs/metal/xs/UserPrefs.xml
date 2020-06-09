@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{A4B0955C-FA80-41CC-8EDE-BE08FEC6D599}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SpreadSheetConnector.cs">
+    <Files>
+      <File FileName="RunSearch.cs" Line="31" Column="26" IsPinned="True" />
+      <File FileName="Program.cs" />
+      <File FileName="Band.cs" />
+      <File FileName="Discography.cs" />
+      <File FileName="Album.cs" />
+      <File FileName="SpreadSheetConnector.cs" Line="64" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="metal" expanded="True" selected="True">
+            <Node name="metal" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+              <Node name="bin" expanded="True">
+                <Node name="Debug" expanded="True">
+                  <Node name="netcoreapp3.1" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.metal PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

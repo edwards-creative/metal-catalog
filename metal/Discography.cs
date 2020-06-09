@@ -1,22 +1,23 @@
 ﻿using System;
-using HtmlAgilityPack;
-using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using HtmlAgilityPack;
 
 namespace metal
 {
-    public static class Discography
+    public class Discography
     {
         public static HtmlNode table;
         public static HtmlNode td;
 
+        public static List<string> albumList;
+        public static string albumUrl;
         public static string title;
         public static string year;
         public static string type;
         public static string discographyUrl;
-        public static string albumUrl;
-        public static string extractAlbumUrl;
 
+        public static int count = 1;
+        public static int albumCount;
 
         public static void GetDiscography()
         {
@@ -29,7 +30,7 @@ namespace metal
         // Loop through the table and write the album names until there are no more albums to list:
         public static void DisplayDiscography()
         {
-            int count = 1;
+            albumList = new List<string>();
             try
             {
                 while (td != null)
@@ -37,20 +38,23 @@ namespace metal
                     title = table.SelectSingleNode($"//tr[{count}]/td[1]").InnerText;
                     year = table.SelectSingleNode($"//tr[{count}]/td[3]").InnerText;
                     type = table.SelectSingleNode($"//tr[{count}]/td[2]").InnerText;
-
                     albumUrl = $"{Band.baseUrl}/albums/{Band.name.Replace(" ", "_")}/{title.Replace(" ", "_")}/";
-                    //Console.WriteLine(albumUrl);
+                    // albumList.Add(albumUrl);
+                    albumList.Add(title);
 
-                    Console.WriteLine("{0}: {1} ({2})", year, title, type);
+                    Console.WriteLine("{0}. {1} ({2}, {3})", count, title, type, year);
                     count++;
                 }
             }
 
             catch (System.NullReferenceException)
             {
-                int totalAlbums = count - 1;
-                Console.WriteLine("\nNo more albums to list, {0} albums total.", totalAlbums);
+                albumCount = albumList.Count;
+                // Console.WriteLine(albumList[0]);
+                // Console.WriteLine("\nNo more albums to list, {0} albums total.", albumCount);
+                count = 1;
             }
+           
         }
     }
 }
