@@ -39,8 +39,9 @@ namespace metal
                     year = table.SelectSingleNode($"//tr[{count}]/td[3]").InnerText;
                     type = table.SelectSingleNode($"//tr[{count}]/td[2]").InnerText;
                     albumUrl = $"{Band.baseUrl}/albums/{Band.name.Replace(" ", "_")}/{title.Replace(" ", "_")}/";
-                    albumList.Add(albumUrl);
-                    
+                    // albumList.Add(albumUrl);
+                    albumList.Add(title);
+
                     Console.WriteLine("{0}. {1} ({2}, {3})", count, title, type, year);
                     count++;
                 }
@@ -49,9 +50,11 @@ namespace metal
             catch (System.NullReferenceException)
             {
                 albumCount = albumList.Count;
-                Console.WriteLine("\nNo more albums to list, {0} albums total.", albumCount);
+                // Console.WriteLine(albumList[0]);
+                // Console.WriteLine("\nNo more albums to list, {0} albums total.", albumCount);
                 count = 1;
             }
+           
         }
     }
 }

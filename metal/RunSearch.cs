@@ -23,15 +23,22 @@ namespace metal
                     Discography.GetDiscography();
                     Discography.DisplayDiscography();
 
+                    Console.WriteLine("\nSelect an Album 1-{0}", Discography.albumCount);
+
                     var spreadsheet = new SpreadsheetConnector();
                     spreadsheet.CreateEntry();
+
+                    //for (int i = albumSelect - 1; i < Discography.albumList.Count; i++)
+                    //{
+                    //    Console.WriteLine("{0}: {1}", i, Discography.albumList[i]);
+                    //}
 
                     //Console.WriteLine("Would you like to see their discography? (Y/N)");
                     //string getDiscography = Console.ReadLine();
 
                     //if (getDiscography.Equals("Y", StringComparison.InvariantCultureIgnoreCase))
                     //{
-                        
+
 
                     //    // Album.AlbumList();
                     //    // Album.GetAlbum();

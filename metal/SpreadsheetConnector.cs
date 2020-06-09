@@ -30,40 +30,20 @@ namespace metal
                 ApplicationName = ApplicationName,
             });
         }
-        public void ReadEntries()
-        {
-            var range = $"{Sheet}!A2:F10";
-            var request = service.Spreadsheets.Values.Get(SpreadsheetId, range);
-
-            var response = request.Execute();
-
-            var values = response.Values;
-            if (values != null && values.Count > 0)
-            {
-                foreach (var row in values)
-                {
-                    Console.WriteLine("{0}: {1} ({2})", row[0], row[2], row[3]);
-                }
-            }
-            else
-            {
-                Console.WriteLine("No data found");
-            }
-        }
-
         public void CreateEntry()
         {
-            var range = $"{Sheet}!A:F";
-            var valueRange = new ValueRange();
-
+            string range = $"{Sheet}!A:F";
+            ValueRange valueRange = new ValueRange();
+            int userSelectIndex = Convert.ToInt32(Console.ReadLine())-1;
             var objectList = new List<object>()
             {
                 $"{Band.name}",
-                $"{Discography.title}",
+                $"{Discography.albumList[userSelectIndex]}",
                 $"{Band.genre}",
                 $"{Band.location}",
                 $"{Band.theme}"
             };
+            Console.WriteLine(Discography.albumList[userSelectIndex]);
             valueRange.Values = new List<IList<object>> { objectList };
 
             var appendRequest = service.Spreadsheets.Values.Append(valueRange, SpreadsheetId, range);
