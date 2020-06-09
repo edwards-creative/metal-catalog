@@ -21,6 +21,7 @@ namespace metal
             name = Console.ReadLine();
 
             return name;
+            
         }
 
         public static void GetBandInfo()

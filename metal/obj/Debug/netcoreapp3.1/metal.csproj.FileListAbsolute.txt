@@ -1,7 +1,3 @@
-/Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.csproj.CoreCompileInputs.cache
-/Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.AssemblyInfoInputs.cache
-/Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.AssemblyInfo.cs
-/Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.csprojAssemblyReference.cache
 /Users/jon/Projects/metal/metal/bin/Debug/netcoreapp3.1/metal.deps.json
 /Users/jon/Projects/metal/metal/bin/Debug/netcoreapp3.1/metal.runtimeconfig.json
 /Users/jon/Projects/metal/metal/bin/Debug/netcoreapp3.1/metal.runtimeconfig.dev.json
@@ -15,7 +11,11 @@
 /Users/jon/Projects/metal/metal/bin/Debug/netcoreapp3.1/HtmlAgilityPack.dll
 /Users/jon/Projects/metal/metal/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /Users/jon/Projects/metal/metal/bin/Debug/netcoreapp3.1/System.Xml.XPath.XmlDocument.dll
+/Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.csproj.CoreCompileInputs.cache
+/Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.AssemblyInfoInputs.cache
+/Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.AssemblyInfo.cs
 /Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.csproj.CopyComplete
 /Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.dll
 /Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.pdb
 /Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.genruntimeconfig.cache
+/Users/jon/Projects/metal/metal/obj/Debug/netcoreapp3.1/metal.csprojAssemblyReference.cache

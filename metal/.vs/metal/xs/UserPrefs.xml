@@ -1,18 +1,27 @@
 ﻿<Properties StartupConfiguration="{A4B0955C-FA80-41CC-8EDE-BE08FEC6D599}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Album.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SpreadSheetConnector.cs">
     <Files>
-      <File FileName="RunSearch.cs" Line="33" Column="38" IsPinned="True" />
+      <File FileName="RunSearch.cs" Line="31" Column="26" IsPinned="True" />
       <File FileName="Program.cs" />
       <File FileName="Band.cs" />
       <File FileName="Discography.cs" />
-      <File FileName="Album.cs" Line="47" Column="17" />
+      <File FileName="Album.cs" />
+      <File FileName="SpreadSheetConnector.cs" Line="64" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="metal" expanded="True">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="metal" expanded="True" selected="True">
             <Node name="metal" expanded="True">
-              <Node name="Album.cs" selected="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+              <Node name="bin" expanded="True">
+                <Node name="Debug" expanded="True">
+                  <Node name="netcoreapp3.1" expanded="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>

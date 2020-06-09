@@ -20,20 +20,26 @@ namespace metal
                     Band.GetBandInfo();
                     Band.DisplayBandInfo();
 
-                    Console.WriteLine("Would you like to see their discography? (Y/N)");
-                    string getDiscography = Console.ReadLine();
+                    Discography.GetDiscography();
+                    Discography.DisplayDiscography();
 
-                    if (getDiscography.Equals("Y", StringComparison.InvariantCultureIgnoreCase))
-                    {
-                        Discography.GetDiscography();
-                        Discography.DisplayDiscography();
+                    var spreadsheet = new SpreadsheetConnector();
+                    spreadsheet.CreateEntry();
 
-                        // Album.AlbumList();
-                        // Album.GetAlbum();
-                        // Album.DisplayTrackList();
+                    //Console.WriteLine("Would you like to see their discography? (Y/N)");
+                    //string getDiscography = Console.ReadLine();
 
-                        continue;
-                    }
+                    //if (getDiscography.Equals("Y", StringComparison.InvariantCultureIgnoreCase))
+                    //{
+                        
+
+                    //    // Album.AlbumList();
+                    //    // Album.GetAlbum();
+                    //    // Album.DisplayTrackList();
+
+                    //    continue;
+                    //}
+
                 }
                 catch (System.NullReferenceException)
                 {
