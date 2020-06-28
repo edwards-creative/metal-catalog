@@ -23,50 +23,22 @@ namespace metal
                     Discography.GetDiscography();
                     Discography.DisplayDiscography();
 
+                    SpreadsheetConnector spreadsheet = new SpreadsheetConnector();
                     Console.WriteLine("\nSelect an Album 1-{0}", Discography.albumCount);
-
-                    var spreadsheet = new SpreadsheetConnector();
                     spreadsheet.CreateEntry();
-
-                    //for (int i = albumSelect - 1; i < Discography.albumList.Count; i++)
-                    //{
-                    //    Console.WriteLine("{0}: {1}", i, Discography.albumList[i]);
-                    //}
-
-                    //Console.WriteLine("Would you like to see their discography? (Y/N)");
-                    //string getDiscography = Console.ReadLine();
-
-                    //if (getDiscography.Equals("Y", StringComparison.InvariantCultureIgnoreCase))
-                    //{
-
-
-                    //    // Album.AlbumList();
-                    //    // Album.GetAlbum();
-                    //    // Album.DisplayTrackList();
-
-                    //    continue;
-                    //}
-
                 }
                 catch (System.NullReferenceException)
                 {
-                    Console.WriteLine("\nYou may have entered an incorrect name, try again? (Y/N)");
-                    string tryAgain = Console.ReadLine();
+                    // string bandlist = $"{Band.baseUrl}/search?searchString={Band.name}&type=band_name";
+                    // HtmlAgilityPack.HtmlDocument bandListDocument = Program.web.Load($"{bandlist}");
 
-                    if (tryAgain.Equals("Y", StringComparison.InvariantCultureIgnoreCase))
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        break;
-                    }
+                    // string bandNames = bandListDocument.DocumentNode.SelectSingleNode("//*[@id='searchResults_info']").InnerText;
+                    Console.WriteLine("\nYou may have entered an incorrect name, or duplicates exist. Please try again.");
+                    // Console.WriteLine(bandNames);
                 }
 
                 finally
                 {
-                    // Console.WriteLine(Band.baseUrl, Discography.discographyUrl);
-                    // Console.WriteLine(Discography.albumUrl);
                     Console.WriteLine("- * -\n");
                 }
             }

@@ -9,6 +9,7 @@ namespace metal
         public static string name;
         public static string genre;
         public static string location;
+        public static string country;
         public static string theme;
         public static string bandNumber;
         public static string id;
@@ -34,6 +35,7 @@ namespace metal
             name = bandLoadPage.DocumentNode.SelectSingleNode("//*[@id='band_info']/h1").InnerText;
             genre = bandLoadPage.DocumentNode.SelectSingleNode("//*[@id='band_stats']/dl[2]/dd[1]").InnerText;
             location = bandLoadPage.DocumentNode.SelectSingleNode("//*[@id='band_stats']/dl[1]/dd[2]").InnerText;
+            country = bandLoadPage.DocumentNode.SelectSingleNode("//*[@id='band_stats']/dl[1]/dd[1]").InnerText;
             theme = bandLoadPage.DocumentNode.SelectSingleNode("//*[@id='band_stats']/dl[2]/dd[2]").InnerText;
 
             // Required to get discography:
@@ -43,7 +45,7 @@ namespace metal
 
         public static void DisplayBandInfo()
         {
-            Console.WriteLine("\n- * -\n{0} is based out of {1}", name, location);
+            Console.WriteLine("\n- * -\n{0} is based out of {1} ({2})", name, location, country);
             Console.WriteLine("They produce {0}, with lyrical themes of {1}\n", genre, theme);
             // Console.WriteLine("The band id is {0}", id);
         }

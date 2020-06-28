@@ -45,7 +45,7 @@
             },
             "HtmlAgilityPack": {
               "target": "Package",
-              "version": "[1.11.23, )"
+              "version": "[1.11.24, )"
             }
           },
           "imports": [

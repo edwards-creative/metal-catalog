@@ -14,6 +14,7 @@ namespace metal
         public static readonly string SpreadsheetId = "1P_uzYbO3rI6GsR0fUo9BkKsRlQHcfd5mm191i_rZgV8";
         public static readonly string Sheet = "catalog";
         public static SheetsService service;
+        
 
         public SpreadsheetConnector()
         {
@@ -32,18 +33,20 @@ namespace metal
         }
         public void CreateEntry()
         {
-            string range = $"{Sheet}!A:F";
+            string range = $"{Sheet}!A:G";
             ValueRange valueRange = new ValueRange();
-            int userSelectIndex = Convert.ToInt32(Console.ReadLine())-1;
-            var objectList = new List<object>()
+            int userSelectIndex = Convert.ToInt32(Console.ReadLine()) - 1;
+            List<object> objectList = new List<object>()
             {
                 $"{Band.name}",
                 $"{Discography.albumList[userSelectIndex]}",
                 $"{Band.genre}",
                 $"{Band.location}",
+                $"{Band.country}",
                 $"{Band.theme}"
             };
-            Console.WriteLine(Discography.albumList[userSelectIndex]);
+
+            Console.WriteLine($"{Discography.albumList[userSelectIndex]} by {Band.name} added to catalog.");
             valueRange.Values = new List<IList<object>> { objectList };
 
             var appendRequest = service.Spreadsheets.Values.Append(valueRange, SpreadsheetId, range);

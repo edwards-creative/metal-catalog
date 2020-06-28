@@ -13,7 +13,7 @@ namespace metal
 
         public static void AlbumList()
         {
-            foreach (var album in Discography.albumList)
+            foreach (var album in albumList)
             {
                 Console.WriteLine("{0}. {1}", selectAlbumIndex, album);
                 selectAlbumIndex += 1;
@@ -25,7 +25,7 @@ namespace metal
             Console.WriteLine($"\nSelect an album (0-{albumCount}, or continue searching. Y/N)");
             userAlbumSelection = Console.ReadLine();
 
-            albumLoadPage = Program.web.Load($"{Discography.albumList[Convert.ToInt32(userAlbumSelection)]}");
+            albumLoadPage = Program.web.Load($"{albumList[Convert.ToInt32(userAlbumSelection)]}");
             table = albumLoadPage.DocumentNode.SelectSingleNode("//table[contains(@class, 'display table_lyrics')]");
             td = table.SelectSingleNode("//td[contains(@class,'wrapWords')]");
 
